@@ -18,7 +18,7 @@ Quick-reference for Novation Launchkey 49 Mk3 → Dolby Atmos Music Panner (DAMP
 
 ## How to Apply These Bindings
 
-These CCs are sent by the Launchkey when the SysEx preset is active (custom slot — not InControl mode).
+These CCs are sent by the Launchkey when the SysEx preset is active (Custom Slot 4 — not InControl mode).
 
 Bind them to DAMP using MIDI Learn:
 1. Right-click any DAMP parameter

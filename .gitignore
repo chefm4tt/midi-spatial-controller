@@ -4,5 +4,14 @@
 .Spotlight-V100
 .Trashes
 
+# Windows
+Thumbs.db
+desktop.ini
+
 # Novation Components cache
 *.cache
+
+# Editor / IDE
+.vscode/
+*.swp
+*~

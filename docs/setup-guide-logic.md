@@ -13,6 +13,8 @@ Step-by-step for Logic Pro + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 - DAMP installed (see Step 1)
 - SysEx preset loaded on Launchkey (see Step 2)
 
+> **If you already use Custom Slot 4:** back it up before loading our preset. See [backup-restore.md](backup-restore.md).
+
 ---
 
 ## Step 1 — Install DAMP (AU)
@@ -30,8 +32,8 @@ Step-by-step for Logic Pro + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 2. Open [Novation Components](https://components.novationmusic.com) in Chrome or Edge
 3. Select your Launchkey 49 Mk3
 4. Click **Import** → select `launchkey-atmos-controller.syx` from the `presets/` folder
-5. Send to **user slot 2** (or any slot above the defaults)
-6. On the Launchkey: press **Custom** → select your preset slot
+5. Send to **Custom Slot 4**
+6. On the Launchkey: press **Custom** → select **Slot 4**
 
 **Verify:** In Logic → Window → MIDI Studio (or use the MIDI Monitor plugin on a track), wiggle encoder 1 — you should see CC 21, channel 1.
 
@@ -85,7 +87,7 @@ MIDI Learn bindings are stored in the project file. Save this session as a Logic
 | Problem | Fix |
 |---------|-----|
 | DAMP not in Logic plugin list | Logic → Plug-In Manager → Rescan. If still missing, reinstall DAMP. |
-| Encoders send wrong CCs | Press Custom on Launchkey and confirm correct preset slot is active (not InControl) |
+| Encoders send wrong CCs | Press Custom on Launchkey and confirm **Slot 4** is active (not InControl) |
 | Sound doesn't move in headphones | Check Logic output is set to Binaural in the Atmos renderer |
 | MIDI bindings gone after reopening | Open the template you saved in Step 7 |
 

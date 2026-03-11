@@ -13,6 +13,8 @@ Step-by-step for Pro Tools + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 - DAMP installed (see Step 1)
 - SysEx preset loaded on Launchkey (see Step 2)
 
+> **If you already use Custom Slot 4:** back it up before loading our preset. See [backup-restore.md](backup-restore.md).
+
 ---
 
 ## Step 1 — Install DAMP (AAX)
@@ -30,8 +32,8 @@ Step-by-step for Pro Tools + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 2. Open [Novation Components](https://components.novationmusic.com) in Chrome or Edge
 3. Select your Launchkey 49 Mk3
 4. Click **Import** → select `launchkey-atmos-controller.syx` from the `presets/` folder
-5. Send to **user slot 2** (or any slot above the defaults)
-6. On the Launchkey: press **Custom** → select your preset slot
+5. Send to **Custom Slot 4**
+6. On the Launchkey: press **Custom** → select **Slot 4**
 
 **Verify:** In Pro Tools → Setup → MIDI → MIDI Monitor, wiggle encoder 1 — should show CC 21, channel 1.
 
@@ -82,7 +84,7 @@ Save the session as a Pro Tools session template (File → Save As Template) to 
 | Problem | Fix |
 |---------|-----|
 | DAMP not in Pro Tools | Reinstall DAMP; verify AAX path `/Library/Application Support/Avid/Audio/Plug-Ins/` |
-| Encoders send wrong CCs | Press Custom on Launchkey, confirm correct preset slot active |
+| Encoders send wrong CCs | Press Custom on Launchkey, confirm **Slot 4** is active (not InControl) |
 | No spatial movement in headphones | Confirm Atmos renderer set to Binaural in session setup |
 | MIDI bindings gone after reopening | Open session template saved in Step 7 |
 
