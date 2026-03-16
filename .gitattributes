@@ -1,1 +1,4 @@
+# Normalize line endings cross-platform
+* text=auto eol=lf
+
 *.syx binary
