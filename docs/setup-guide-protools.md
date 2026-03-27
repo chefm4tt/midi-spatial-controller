@@ -19,7 +19,7 @@ Step-by-step for Pro Tools + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 
 ## Step 1 — Install DAMP (AAX)
 
-1. Go to [developer.dolby.com](https://developer.dolby.com) and create a free account
+1. Go to [customer.dolby.com](https://customer.dolby.com/content-creation-and-delivery/dolby-atmos-music-panner/) and create a free account
 2. Download the Dolby Atmos Music Panner (DAMP) for macOS
 3. Run the installer — DAMP installs the AAX version for Pro Tools
 4. Open Pro Tools — DAMP should appear under Plug-Ins → Multichannel Plug-Ins → Dolby
