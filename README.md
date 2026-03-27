@@ -1,13 +1,11 @@
 # MIDI Spatial Controller
 
-A side project for Full Sail Audio Production students. Maps the Novation Launchkey 49's (Mk3 or Mk4) hardware encoders to the X/Y/Z/Size parameters in the Dolby Atmos Music Panner so you can position sound in 3D space in real time during playback. No custom code required.
+A side project for Full Sail Audio Production students. Maps the Novation Launchkey 49's (Mk3 or Mk4) hardware encoders to the spatial parameters in Logic Pro's built-in 3D Object Panner so you can position sound in 3D space in real time during playback. No extra software required.
 
 This isn't tied to coursework. It's extracurricular, built to see what's actually possible with gear and software that's already in everyone's hands. If you have a Launchkey 49, it takes about 15 minutes to set up.
 
-Works in Logic Pro and Pro Tools.
-
 **Setup time:** ~15 minutes
-**Required gear:** Novation Launchkey 49 (Mk3 or Mk4), macOS, Logic Pro or Pro Tools, headphones
+**Required gear:** Novation Launchkey 49 (Mk3 or Mk4), macOS, Logic Pro (10.7.5+), headphones
 
 ---
 
@@ -15,11 +13,10 @@ Works in Logic Pro and Pro Tools.
 
 | Path | Contents |
 |------|----------|
-| `presets/` | Novation Components SysEx preset (send to Custom Slot 4) |
+| `presets/` | Novation Components SysEx preset |
 | `docs/setup-guide-logic.md` | Logic Pro setup walkthrough |
-| `docs/setup-guide-protools.md` | Pro Tools setup walkthrough |
-| `docs/cc-reference.md` | Quick-reference: encoder to DAMP parameter |
-| `docs/backup-restore.md` | How to back up your existing Slot 4 preset and restore it |
+| `docs/cc-reference.md` | Quick-reference: encoder to panner parameter mapping |
+| `docs/backup-restore.md` | How to back up your existing preset and restore it |
 
 ---
 
@@ -35,28 +32,27 @@ The preset loads into **Custom Slot 4** on your Launchkey (Mk3) or as a **Custom
 
 ## Quick Start
 
-1. **Download DAMP** (requires free Dolby account): [customer.dolby.com](https://customer.dolby.com/content-creation-and-delivery/dolby-atmos-music-panner/). Sign in, click **Select files for download**, and grab the `.dmg` (v1.2.0 at time of writing). Install AU for Logic or AAX for Pro Tools.
-2. **Download the preset** from [`presets/launchkey-atmos-controller.syx`](presets/launchkey-atmos-controller.syx) in this repo.
-3. **Load the preset** in [Novation Components](https://components.novationmusic.com): import the `.syx` file you downloaded and send it to **Custom Slot 4** (Mk3) or upload it as a **Custom Mode** (Mk4).
-4. **Activate the preset** on the Launchkey:
+1. **Download the preset** from [`presets/launchkey-atmos-controller.syx`](presets/launchkey-atmos-controller.syx) in this repo.
+2. **Load the preset** in [Novation Components](https://components.novationmusic.com): import the `.syx` file you downloaded and send it to **Custom Slot 4** (Mk3) or upload it as a **Custom Mode** (Mk4).
+3. **Activate the preset** on the Launchkey:
    - **Mk3:** press **Custom** → select **Slot 4**
    - **Mk4:** hold **Shift** + press **Pad 8** (top row, rightmost) to activate Encoder Custom Mode 4
-5. **In your DAW**, add DAMP to an Atmos object track, then MIDI Learn each encoder:
-   - Right-click **X** → turn encoder 1
-   - Right-click **Y** → turn encoder 2
-   - Right-click **Z** → turn encoder 3
-   - Right-click **Size** → turn encoder 4
-6. Play audio and turn the knobs. Sound moves in 3D.
+4. **In Logic**, enable Dolby Atmos, create an audio track, open the **3D Object Panner**, and use **Cmd+L** (Controller Assignments) to map each encoder:
+   - **Left/Right** → encoder 1
+   - **Back/Front** → encoder 2
+   - **Elevation** → encoder 3
+   - **Size** → encoder 4
+5. Play audio and turn the knobs. Sound moves in 3D.
 
-See the full walkthrough in `docs/` for your DAW.
+See [docs/setup-guide-logic.md](docs/setup-guide-logic.md) for the full walkthrough.
 
 ---
 
-## Why DAMP?
+## How It Works
 
-Logic Pro's built-in 3D Object Panner and Pro Tools' native Atmos panner don't accept generic MIDI CC. The Dolby Atmos Music Panner is a free Dolby plugin that does. It exposes all four spatial parameters as MIDI-learnable controls and works in both DAWs.
+Logic Pro (10.7.5+) includes a built-in Dolby Atmos renderer and a **3D Object Panner** on every Atmos object track. The panner has four spatial parameters (Left/Right, Back/Front, Elevation, Size) that can be mapped to external MIDI controllers using Logic's **Controller Assignments** (Cmd+L).
 
-DAMP is an official Dolby product distributed through the Dolby Developer portal. See the [product page](https://professional.dolby.com/product/dolby-atmos-content-creation/dolby-atmos-music-panner/) for full documentation.
+This project provides a SysEx preset that configures your Launchkey's first four encoders to send specific MIDI CC messages (21-24). Once loaded, you map each encoder to a panner parameter and you're done -- no extra plugins, no Dolby account, no additional software.
 
 ---
 
@@ -64,9 +60,8 @@ DAMP is an official Dolby product distributed through the Dolby Developer portal
 
 - Novation Launchkey 49 Mk3 or Mk4 (any color)
 - macOS (Apple Silicon or Intel)
-- Logic Pro or Pro Tools
-- Headphones (the binaural renderer handles spatial output, no speaker rig needed)
-- Free Dolby Developer account to download DAMP
+- Logic Pro (10.7.5+)
+- Headphones (Logic's binaural renderer handles spatial output, no speaker rig needed)
 
 ---
 
@@ -87,6 +82,6 @@ See [docs/backup-restore.md](docs/backup-restore.md) for the full backup/restore
 
 | Resource | Link | Notes |
 |----------|------|-------|
-| Dolby Atmos Music Panner (product page) | [professional.dolby.com](https://professional.dolby.com/product/dolby-atmos-content-creation/dolby-atmos-music-panner/) | Official Dolby product page with documentation |
-| DAMP download | [customer.dolby.com](https://customer.dolby.com/content-creation-and-delivery/dolby-atmos-music-panner/) | Requires free Dolby account |
-| Novation Components | [components.novationmusic.com](https://components.novationmusic.com) | Official Novation browser app for preset management |
+| Novation Components | [components.novationmusic.com](https://components.novationmusic.com) | Browser app for managing Launchkey presets |
+| Logic Pro Dolby Atmos guide | [support.apple.com](https://support.apple.com/guide/logicpro/dolby-atmos-mixing-workflows-lgcp8a3c3dd3/mac) | Apple's official Atmos mixing workflow docs |
+| 3D Object Panner reference | [support.apple.com](https://support.apple.com/guide/logicpro/3d-object-panner-overview-lgcp4492e120/mac) | Panner parameter reference |
