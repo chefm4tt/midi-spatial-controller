@@ -1,4 +1,4 @@
-# MIDI Spatial Controller
+# 🎛️ MIDI Spatial Controller
 
 A side project for Full Sail Audio Production students. Maps the Novation Launchkey 49's (Mk3 or Mk4) hardware encoders to the spatial parameters in Logic Pro's built-in 3D Object Panner so you can position sound in 3D space in real time during playback. No extra software required.
 
