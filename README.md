@@ -36,16 +36,17 @@ The preset loads into **Custom Slot 4** on your Launchkey (Mk3) or as a **Custom
 ## Quick Start
 
 1. **Download DAMP** (requires free Dolby account): [customer.dolby.com](https://customer.dolby.com/content-creation-and-delivery/dolby-atmos-music-panner/). Sign in, click **Select files for download**, and grab the `.dmg` (v1.2.0 at time of writing). Install AU for Logic or AAX for Pro Tools.
-2. **Load the preset** in [Novation Components](https://components.novationmusic.com): import the `.syx` file from `presets/` and send it to **Custom Slot 4** (Mk3) or upload it as a **Custom Mode** (Mk4).
-3. **Activate the preset** on the Launchkey:
+2. **Download the preset** from [`presets/launchkey-atmos-controller.syx`](presets/launchkey-atmos-controller.syx) in this repo.
+3. **Load the preset** in [Novation Components](https://components.novationmusic.com): import the `.syx` file you downloaded and send it to **Custom Slot 4** (Mk3) or upload it as a **Custom Mode** (Mk4).
+4. **Activate the preset** on the Launchkey:
    - **Mk3:** press **Custom** → select **Slot 4**
    - **Mk4:** hold **Shift** + press **Pad 8** (top row, rightmost) to activate Encoder Custom Mode 4
-4. **In your DAW**, add DAMP to an Atmos object track, then MIDI Learn each encoder:
+5. **In your DAW**, add DAMP to an Atmos object track, then MIDI Learn each encoder:
    - Right-click **X** → turn encoder 1
    - Right-click **Y** → turn encoder 2
    - Right-click **Z** → turn encoder 3
    - Right-click **Size** → turn encoder 4
-5. Play audio and turn the knobs. Sound moves in 3D.
+6. Play audio and turn the knobs. Sound moves in 3D.
 
 See the full walkthrough in `docs/` for your DAW.
 

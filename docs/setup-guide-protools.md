@@ -28,21 +28,22 @@ Step-by-step for Pro Tools + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 
 ## Step 2 — Load Novation Preset
 
-1. Connect Launchkey 49 via USB
-2. Open [Novation Components](https://components.novationmusic.com) in Chrome or Edge
-3. Select your Launchkey 49
+1. Download `launchkey-atmos-controller.syx` from the [`presets/`](../presets/) folder in this repo (click the file → click **Download** or **Raw**)
+2. Connect Launchkey 49 via USB
+3. Open [Novation Components](https://components.novationmusic.com) in Chrome or Edge
+4. Select your Launchkey 49
 
 **Mk3:**
 
-4. Click **Import** → select `launchkey-atmos-controller.syx` from the `presets/` folder
-5. Send to **Custom Slot 4**
-6. On the Launchkey: press **Custom** → select **Slot 4**
+5. Click **Import** → select the `launchkey-atmos-controller.syx` file you downloaded
+6. Send to **Custom Slot 4**
+7. On the Launchkey: press **Custom** → select **Slot 4**
 
 **Mk4:**
 
-4. Go to **Custom Modes** → click **Upload Custom Mode** → select `launchkey-atmos-controller.syx`
-5. Click **Send to Launchkey MK4** → select slot **4**
-6. On the Launchkey: hold **Shift** + press **Pad 8** (top row, rightmost) to activate Encoder Custom Mode 4
+5. Go to **Custom Modes** → click **Upload Custom Mode** → select the `launchkey-atmos-controller.syx` file you downloaded
+6. Click **Send to Launchkey MK4** → select slot **4**
+7. On the Launchkey: hold **Shift** + press **Pad 8** (top row, rightmost) to activate Encoder Custom Mode 4
 
 **Verify:** In Pro Tools → Setup → MIDI → MIDI Monitor, wiggle encoder 1 — should show CC 21, channel 1.
 
