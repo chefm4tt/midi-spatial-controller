@@ -7,7 +7,7 @@ Step-by-step for Logic Pro + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 ## Prerequisites
 
 - macOS
-- Novation Launchkey 49 Mk3 + USB cable
+- Novation Launchkey 49 (Mk3 or Mk4) + USB cable
 - Logic Pro (10.7.5+ recommended)
 - Headphones
 - DAMP installed (see Step 1)
@@ -30,10 +30,19 @@ Step-by-step for Logic Pro + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 
 1. Connect Launchkey 49 via USB
 2. Open [Novation Components](https://components.novationmusic.com) in Chrome or Edge
-3. Select your Launchkey 49 Mk3
+3. Select your Launchkey 49
+
+**Mk3:**
+
 4. Click **Import** → select `launchkey-atmos-controller.syx` from the `presets/` folder
 5. Send to **Custom Slot 4**
 6. On the Launchkey: press **Custom** → select **Slot 4**
+
+**Mk4:**
+
+4. Go to **Custom Modes** → click **Upload Custom Mode** → select `launchkey-atmos-controller.syx`
+5. Click **Send to Launchkey MK4** → select slot **4**
+6. On the Launchkey: hold **Shift** + press **Pad 8** (top row, rightmost) to activate Encoder Custom Mode 4
 
 **Verify:** In Logic → Window → MIDI Studio (or use the MIDI Monitor plugin on a track), wiggle encoder 1 — you should see CC 21, channel 1.
 
@@ -87,7 +96,7 @@ MIDI Learn bindings are stored in the project file. Save this session as a Logic
 | Problem | Fix |
 |---------|-----|
 | DAMP not in Logic plugin list | Logic → Plug-In Manager → Rescan. If still missing, reinstall DAMP. |
-| Encoders send wrong CCs | Press Custom on Launchkey and confirm **Slot 4** is active (not InControl) |
+| Encoders send wrong CCs | Press Custom on Launchkey and confirm the correct slot/mode is active (not InControl) |
 | Sound doesn't move in headphones | Check Logic output is set to Binaural in the Atmos renderer |
 | MIDI bindings gone after reopening | Open the template you saved in Step 7 |
 

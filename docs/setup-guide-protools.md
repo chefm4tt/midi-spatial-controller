@@ -7,7 +7,7 @@ Step-by-step for Pro Tools + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 ## Prerequisites
 
 - macOS
-- Novation Launchkey 49 Mk3 + USB cable
+- Novation Launchkey 49 (Mk3 or Mk4) + USB cable
 - Pro Tools (2022.9+ recommended; Atmos requires Ultimate or a Dolby Atmos Production Suite license)
 - Headphones
 - DAMP installed (see Step 1)
@@ -30,10 +30,19 @@ Step-by-step for Pro Tools + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 
 1. Connect Launchkey 49 via USB
 2. Open [Novation Components](https://components.novationmusic.com) in Chrome or Edge
-3. Select your Launchkey 49 Mk3
+3. Select your Launchkey 49
+
+**Mk3:**
+
 4. Click **Import** → select `launchkey-atmos-controller.syx` from the `presets/` folder
 5. Send to **Custom Slot 4**
 6. On the Launchkey: press **Custom** → select **Slot 4**
+
+**Mk4:**
+
+4. Go to **Custom Modes** → click **Upload Custom Mode** → select `launchkey-atmos-controller.syx`
+5. Click **Send to Launchkey MK4** → select slot **4**
+6. On the Launchkey: hold **Shift** + press **Pad 8** (top row, rightmost) to activate Encoder Custom Mode 4
 
 **Verify:** In Pro Tools → Setup → MIDI → MIDI Monitor, wiggle encoder 1 — should show CC 21, channel 1.
 
@@ -84,7 +93,7 @@ Save the session as a Pro Tools session template (File → Save As Template) to 
 | Problem | Fix |
 |---------|-----|
 | DAMP not in Pro Tools | Reinstall DAMP; verify AAX path `/Library/Application Support/Avid/Audio/Plug-Ins/` |
-| Encoders send wrong CCs | Press Custom on Launchkey, confirm **Slot 4** is active (not InControl) |
+| Encoders send wrong CCs | Press Custom on Launchkey, confirm the correct slot/mode is active (not InControl) |
 | No spatial movement in headphones | Confirm Atmos renderer set to Binaural in session setup |
 | MIDI bindings gone after reopening | Open session template saved in Step 7 |
 
