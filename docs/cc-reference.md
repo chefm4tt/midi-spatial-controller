@@ -26,9 +26,11 @@ These CCs are sent by the Launchkey when the SysEx preset is active:
 Map them to Logic's 3D Object Panner using Controller Assignments:
 1. Open the **3D Object Panner** on your track (double-click the surround panner at the bottom of the channel strip)
 2. Click a parameter value (e.g., **Left/Right**)
-3. Press **Cmd+L** to enter Learn mode
+3. Press **Cmd+L** — the Controller Assignments window opens
 4. Turn the corresponding encoder on the Launchkey
-5. Repeat for each parameter, then press **Cmd+L** to exit Learn mode
+5. Click the **Learn** button (bottom-right of the Controller Assignments window) to confirm
+6. Repeat for each parameter: click the next value, turn the next encoder, click **Learn**
+7. Close the Controller Assignments window when done
 
 Bindings are saved in the Logic project file. Save a template after first setup.
 

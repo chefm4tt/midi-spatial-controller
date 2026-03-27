@@ -81,12 +81,13 @@ Logic's **Controller Assignments** let you map any MIDI CC to any plugin or pann
    - **Mk3:** press **Custom** → select **Slot 4**
    - **Mk4:** hold **Shift** + press **Pad 8** (top row, rightmost)
 2. In the 3D Object Panner window, **click the Left/Right value** (the number at the top-left, e.g., 0.000) to select it
-3. Press **Cmd+L** — this enters Logic's Controller Assignment Learn mode
-4. Turn **encoder 1** on the Launchkey — Logic captures CC 21 and assigns it to Left/Right
-5. **Click the Back/Front value**, then turn **encoder 2**
-6. **Click the Elevation value**, then turn **encoder 3**
-7. **Click the Size value**, then turn **encoder 4**
-8. Press **Cmd+L** again to exit Learn mode
+3. Press **Cmd+L** — the Controller Assignments window opens with Learn mode active
+4. Turn **encoder 1** on the Launchkey — Logic captures CC 21
+5. Click the **Learn** button (bottom-right of the Controller Assignments window) to confirm the mapping
+6. **Click the Back/Front value** in the panner, turn **encoder 2**, click **Learn**
+7. **Click the Elevation value**, turn **encoder 3**, click **Learn**
+8. **Click the Size value**, turn **encoder 4**, click **Learn**
+9. Close the Controller Assignments window
 
 All four parameters are now mapped:
 
