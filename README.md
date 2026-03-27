@@ -7,6 +7,8 @@ This isn't tied to coursework. It's extracurricular, built to see what's actuall
 **Setup time:** ~15 minutes
 **Required gear:** Novation Launchkey 49 (Mk3 or Mk4), macOS, Logic Pro (10.7.5+), headphones
 
+[![Demo Video](https://img.youtube.com/vi/sBft6fsQfB4/maxresdefault.jpg)](https://youtu.be/sBft6fsQfB4)
+
 ---
 
 ## What's in This Repo
