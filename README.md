@@ -35,7 +35,7 @@ The preset loads into **Custom Slot 4** on your Launchkey (Mk3) or as a **Custom
 
 ## Quick Start
 
-1. **Download DAMP** (requires free Dolby account): [customer.dolby.com](https://customer.dolby.com/content-creation-and-delivery/dolby-atmos-music-panner/). Install AU for Logic or AAX for Pro Tools.
+1. **Download DAMP** (requires free Dolby account): [customer.dolby.com](https://customer.dolby.com/content-creation-and-delivery/dolby-atmos-music-panner/). Sign in, click **Select files for download**, and grab the `.dmg` (v1.2.0 at time of writing). Install AU for Logic or AAX for Pro Tools.
 2. **Load the preset** in [Novation Components](https://components.novationmusic.com): import the `.syx` file from `presets/` and send it to **Custom Slot 4** (Mk3) or upload it as a **Custom Mode** (Mk4).
 3. **Activate the preset** on the Launchkey:
    - **Mk3:** press **Custom** → select **Slot 4**

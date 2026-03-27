@@ -19,9 +19,9 @@ Step-by-step for Logic Pro + Novation Launchkey 49 + DAMP. Setup time: ~15 minut
 
 ## Step 1 — Install DAMP (AU)
 
-1. Go to [customer.dolby.com](https://customer.dolby.com/content-creation-and-delivery/dolby-atmos-music-panner/) and create a free account
-2. Download the Dolby Atmos Music Panner (DAMP) for macOS
-3. Run the installer — DAMP installs as an Audio Unit to `/Library/Audio/Plug-Ins/Components/`
+1. Go to [customer.dolby.com](https://customer.dolby.com/content-creation-and-delivery/dolby-atmos-music-panner/) and create a free account (or sign in if you already have one)
+2. Click **Select files for download** → select **Dolby Atmos Music Panner 1.2.0_5965809.dmg** → click **Download**
+3. Open the `.dmg` and run the installer — DAMP installs as an Audio Unit to `/Library/Audio/Plug-Ins/Components/`
 4. Open Logic → Logic Pro menu → Settings → Plug-In Manager → click **Rescan** — confirm Dolby Atmos Music Panner appears
 
 ---
