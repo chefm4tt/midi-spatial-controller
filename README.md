@@ -16,8 +16,10 @@ This isn't tied to coursework. It's extracurricular, built to see what's actuall
 | Path | Contents |
 |------|----------|
 | `presets/` | Novation Components SysEx preset |
-| `docs/setup-guide-logic.md` | Logic Pro setup walkthrough |
-| `docs/cc-reference.md` | Quick-reference: encoder to panner parameter mapping |
+| `docs/setup-guide-logic.md` | Logic Pro setup walkthrough (native 3D Object Panner) |
+| `docs/cc-reference.md` | Encoder → panner parameter mapping (native 3D Object Panner) |
+| `docs/setup-guide-damp.md` | Setup walkthrough for the Dolby Atmos Music Panner plugin |
+| `docs/damp-cc-reference.md` | Encoder → parameter mapping for the DAMP plugin |
 | `docs/backup-restore.md` | How to back up your existing preset and restore it |
 
 ---
